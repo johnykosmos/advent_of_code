@@ -4,9 +4,13 @@ mkdir $1
 touch $1/input.txt
 cat template.py > $1/solve.py
 
-python3 -m aocd
-aocd $1 2023 > $1/input.txt
+#Automated input download
+cd $1
+python3 - <<EOF 
+from aocd import get_data
 
-
-
+with open("input.txt", 'w') as f:
+	f.write(get_data(day = $1, year = 2023))
+	f.close
+EOF
 
