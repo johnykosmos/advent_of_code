@@ -11,6 +11,5 @@ from aocd import get_data
 
 with open("input.txt", 'w') as f:
 	f.write(get_data(day = $1, year = 2023))
-	f.close
 EOF
 
