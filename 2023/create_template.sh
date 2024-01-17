@@ -2,6 +2,7 @@
 
 mkdir $1
 touch $1/input.txt
+touch $1/input2.txt
 cat template.py > $1/solve.py
 
 #Automated input download
