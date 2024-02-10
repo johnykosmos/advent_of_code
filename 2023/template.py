@@ -13,7 +13,9 @@ def part_two(in_):
     pass
 
 def main() -> None:
-    print("essa")
+    in_ = get_input("input2.txt")
+    part_one(in_)
+    part_two(in_)
 
 if __name__ == '__main__':
     main()
